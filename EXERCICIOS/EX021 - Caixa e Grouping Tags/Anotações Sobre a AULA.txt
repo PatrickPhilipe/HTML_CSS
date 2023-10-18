@@ -1,0 +1,18 @@
+Youtube:
+
+Aula 1
+https://www.youtube.com/watch?v=-CPoDvZLQ6k&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=25&ab_channel=CursoemV%C3%ADdeo
+
+Aula 2
+https://www.youtube.com/watch?v=JPMm-jyKOaM&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=26&ab_channel=CursoemV%C3%ADdeo
+
+Aula 3
+https://www.youtube.com/watch?v=JACiDRNWjjQ&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=27&ab_channel=CursoemV%C3%ADdeo
+
+Aula 4
+https://www.youtube.com/watch?v=PGIrTzQqpqo&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=28&ab_channel=CursoemV%C3%ADdeo
+
+
+----ANOTAÇÕES----
+Tivemos estudo sobre Box-Level e
+inline-level

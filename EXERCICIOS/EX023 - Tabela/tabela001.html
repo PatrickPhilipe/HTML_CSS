@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        table {
+            width: 200px; /*largura da tabela*/
+            height: 200px;
+            padding: 6px 6px;
+            border-collapse: collapse; /* Serve para tirar o espaço entre as bordas de uma tabela*/
+        }
+        td {
+            border: 2px solid black; /*Colocar borda em volta do td*/
+            padding: 5px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle; /*Alinhamento vertical*/
+        }
+
+        tr.linha {
+            background-color: crimson;
+        }
+
+        td.dado {
+            background-color: burlywood;
+            
+
+        }
+
+        .numero {
+            text-align: right; /*Alinhamento a direita*/
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABELA = tabela
+            TABELA ROW = linha de tabela
+            TABELA DEADER = cabeçalho de tabela
+            TABELA DATA = dado de tabela
+    -->
+    
+<table>
+        <tr class="linha"> <!-- tr são linha-->
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+
+        <tr>
+            <td>B1</td>
+            <td class="numero">B2</td> <!--Alinhamento a direita-->>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td class="dado">C2</td>
+            <td>C3</td>
+        </tr>
+
+
+
+</table>
+
+</body>
+</html>

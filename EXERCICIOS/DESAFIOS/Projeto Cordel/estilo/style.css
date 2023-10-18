@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+  :root {
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+   
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh; /*Minimo da altura  obs: Se fosse Width seria largura**/
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    padding-top: 50px; /*espaçaento*/
+    /*text-transform: uppercase;  Colocar tudo em maiscula*/
+    font-variant: small-caps; /*Colocar tudo em maiscula*/
+    font-size: 4em;
+}
+
+header > p {
+    padding-bottom: 50px;
+ }
+
+a {
+    color: white;
+    text-decoration: none; /*Tirar sublinhado*/
+    font-weight: bolder; /*Colocar em negrito*/
+}
+
+a:hover { /*Se eu quisesse também poderia colocar header a:hover, footer a:hover {}*/
+    text-decoration: underline; /*Fica sublinhado quando passa o mouse em cima*/
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaçamento duplo nas frases*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw; /* Para ajustar a largura quando diminui a tela, lembrando que vw é largura*/
+
+}
+
+section > p {
+    padding-bottom: 2em; /*Dá um espaço no section, no texto*/
+}
+
+section.normal {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+section.imagem {
+    background-color: #353535;
+    color: white;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p {
+    display: inline-block; /*Se adapta ao tamanho do cunteúdo, no caso do paragrafo <p>*/
+    background-color: hsla(0, 0%, 0%, 0.253);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+
+        
+}
+
+section#img01 {
+    background-image: url('../img/background001.jpg');
+    background-position: right center;
+    background-size: cover;  
+
+        
+}
+
+section#img02 {
+    background-image: url('../img/background002.jpg');
+    background-position: right center;
+    background-size: cover; 
+}
+    
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabela grande</title>
+    
+</head>
+
+<Style>
+        table {
+            width: 500px;
+            border-collapse: collapse; /*remover o espaço entre bordas*/
+            position: relative;
+        }
+        thead > tr > th { /*Serve para fixar o cabeçalho da tabela*/
+            position: sticky;
+            top: -1px;
+            background-color: black;
+}
+
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+        }    
+        thead, tfoot {
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: rgb(83, 229, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            background-color: rgb(185, 185, 185);
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(odd) { 
+            background-color: rgb(141, 141, 141);
+        } /*Efeito zebrado,2n pula de dois em dois. OBS: Em vez de 2n colocar odd que significa impar, ele irá efetuar o zebrado apenas nas impar. "Peudoclase"*/
+        /*Pode ser usado odd impar ou oven que é par*/
+</Style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+        <!--
+            ANATOMIA DE TABELAS GRANDES
+            TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR,TD. TH
+                scope="row":  Serve para o google analisar, não causa resultado visual
+        -->
+    <table>
+        <caption><strong>Polulação das Unidades Federativas</strong></caption>
+        <thead>
+            <th scope="row">ESTADO</th>
+            <th style="width: 75px;">POPULAÇÂO</th>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.237.239</td>
+            </tr>
+
+            <tr>
+                <td>Ceara</td>
+                <td class="num">8.936.431</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catárina</td>
+                <td class="num">7.762.154</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6.950.976</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.574.789</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.030.961</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.952.262</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.784.239</td>
+            </tr>
+
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.303.953</td>
+            </tr>
+
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.270.174</td>
+            </tr>
+
+                <tfoot>
+                    <th scope="row"><strong>Total de Habitantes</strong></th>
+                    <td >210.147.125</td>
+                </tfoot>
+        </tbody>
+
+
+
+    </table>
+
+
+</body>
+</html>

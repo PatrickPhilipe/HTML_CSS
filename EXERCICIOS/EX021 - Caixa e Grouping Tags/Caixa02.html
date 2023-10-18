@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(54, 54, 54);
+        }
+        header {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+
+        }
+        main {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+             
+        }
+
+        article {
+            background-color: azure;
+        }
+
+        article > aside{
+            background-color: rgb(43, 86, 141);
+        }
+
+
+        footer {
+            background-color: rgb(31, 31, 31);
+            color: azure;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            
+        }
+        footer > p {
+             margin: 6px;         
+        }
+        nav {
+            background-color: rgb(140, 193, 240);
+            padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+            border-radius: 5px 5px;
+            text-align: center;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        nav > a {
+            text-decoration: none;
+            color: rgb(44, 44, 44);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav >a:hover {
+            text-decoration: underline;
+        }
+                
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+       <p>Magia de se viver...</p>
+        <section>
+
+        <section  id="Notícias">
+          <article>
+            <h2>Seita Pitagórica</h2>
+            <p>Os pitagóricos acreditavam na reencarnação da alma ou a transmigração de corpos. A doutrina da seita era baseada numa purificação da alma por meio da vida corpórea, pois essa era a finalidade da vida material, até que a alma atingisse um estado de purificação total e alcance da vida eterna.
+            Essa purificação somente seria alcançada por meio do acesso ao conhecimento e à sabedoria. Aristóteles afirmou que Pitágoras foi o criador da palavra filósofo (amante da sabedoria), o que atesta a sua defesa de uma busca pela sabedoria como modo de evoluir." 
+             <aside><p> - filósofo e matemático Pitágoras </p></aside>
+            </p>
+           </article>
+        </section>
+        </section>
+        </section>
+   </main>
+   <footer> 
+   <p>Desenvolvido pelo Curso e Vídeo</p>
+   </footer>
+   
+</body>
+</html>
