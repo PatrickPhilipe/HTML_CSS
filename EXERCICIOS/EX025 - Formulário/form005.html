@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário checkbox</title>
+</head>
+<body>
+    <H1>Eemplo de formulário Cashbox</H1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+       
+           
+                <p>
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sexo" id="ismas" value="M" checked>
+                        <label for="ismas">Masculino<br></label>
+                        <input type="radio" name="sexo" id="isfem" value="F">
+                        <label for="isfem">Feminino</label>
+                        <!-- Nesse caso o name= tem que ter os nomes igual pois por tratar de Sexo, informação que condiz ou um ou outro -->
+                    </fieldset>
+                </p>
+
+          
+         <fieldset>
+
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="bas" id="ibas" checked>
+            <label for="ibas">Basquete</label><br> 
+
+            <input type="checkbox" name="fut" id="ifut">Futebol<br> 
+
+            <input type="checkbox" name="volei" id="ivolei" >Volei<br> 
+
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tenis</label><br> 
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        
+    </form>
+    
+</body>
+</html>
