@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+
+    <form action="Cadastro.php" method="post" autocomplete="on"> 
+        <!-- autocomplete off serve para não sugerir no formulário -->
+        <!-- Post serve para dados sensíveis, tipo senhas, Post serve para não aparecer os dadso no campo do navegador OBS: Post não é segurança total-->
+        <!-- Get serve para dados não sensíveis -->
+        <p><label for="inome">Nome: </label>
+            <!-- Dentro da tag label em for="" colocar sempre o id - O ID faz a relção com label e JS -->
+            <input type="text" name="nome" id="inome" autocomplete="username"></p>
+        <!-- Caixa onde vai os dados -->
+        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="ENVIAR">
+        <!-- Input submit é para criar o botão enviar -->
+    </form>
+    
+</body>
+</html>

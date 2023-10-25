@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <Label for="iusu">Usuário:</Label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="10" size="8" placeholder="Nome do Usuário">
+            <!-- required serve para tornar o campo obrigatório -->
+            <!-- minlength serve para definir o minimo de letra dentro do campo -->
+            <!-- maxlength serve para definir o máximo de letra dentro do campo -->
+            <!-- Size Define a qualidade de caractere que irá mostrar dentro do campo ao digitar a senha -->
+            <!-- placeholder define a palavra que será mostrada dentro do campo que irá receber a informação -->
+        </p>
+
+        <p>
+             <label for="isen">Senha:</label>
+             <input type="password" name="isen" id="isen" required minlength="">
+             <!-- required serve para tornar o campo obrigatório -->
+             <!-- minlength serve para definir o minimo de letra dentro do campo -->
+             
+        </p>
+       
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="submit" value="RESETAR">
+        </p>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
